@@ -29,27 +29,54 @@ const DrumMachine = () => {
       <div id="drum-machine">
         <div id="button-container">
           <div id="button-top-row">
-            <DrumPad label="Q" audioClipURL={AUDIO_CLIP_URL_HEATER_1}></DrumPad>
-            <DrumPad label="W" audioClipURL={AUDIO_CLIP_URL_HEATER_2}></DrumPad>
-            <DrumPad label="E" audioClipURL={AUDIO_CLIP_URL_HEATER_3}></DrumPad>
+            <DrumPad
+              label="Q"
+              audioClipURL={AUDIO_CLIP_URL_HEATER_1}
+              onClick={setAudioFileName}
+            ></DrumPad>
+            <DrumPad
+              label="W"
+              audioClipURL={AUDIO_CLIP_URL_HEATER_2}
+              onClick={setAudioFileName}
+            ></DrumPad>
+            <DrumPad
+              label="E"
+              audioClipURL={AUDIO_CLIP_URL_HEATER_3}
+              onClick={setAudioFileName}
+            ></DrumPad>
           </div>
           <div id="button-middle-row">
-            <DrumPad label="A" audioClipURL={AUDIO_CLIP_URL_HEATER_4}></DrumPad>
-            <DrumPad label="S" audioClipURL={AUDIO_CLIP_URL_CLAP}></DrumPad>
+            <DrumPad
+              label="A"
+              audioClipURL={AUDIO_CLIP_URL_HEATER_4}
+              onClick={setAudioFileName}
+            ></DrumPad>
+            <DrumPad
+              label="S"
+              audioClipURL={AUDIO_CLIP_URL_CLAP}
+              onClick={setAudioFileName}
+            ></DrumPad>
             <DrumPad
               label="D"
               audioClipURL={AUDIO_CLIP_URL_OPEN_HIGH_HAT}
+              onClick={setAudioFileName}
             ></DrumPad>
           </div>
           <div id="button-bottom-row">
             <DrumPad
               label="Z"
               audioClipURL={AUDIO_CLIP_URL_KICK_AND_HAT}
+              onClick={setAudioFileName}
             ></DrumPad>
-            <DrumPad label="X" audioClipURL={AUDIO_CLIP_URL_KICK}></DrumPad>
+            <DrumPad
+              label="X"
+              audioClipURL={AUDIO_CLIP_URL_KICK}
+              onClick={setAudioFileName}
+            ></DrumPad>
             <DrumPad
               label="C"
               audioClipURL={AUDIO_CLIP_URL_CLOSED_HIGH_HAT}
+              onClick={setAudioFileName}
             ></DrumPad>
           </div>
         </div>

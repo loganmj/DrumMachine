@@ -8,3 +8,10 @@
     display: flex;
     justify-content: center;
 }
+
+#audio-file-label{
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+}
