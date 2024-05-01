@@ -1,0 +1,10 @@
+#drum-machine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-top-row, #button-middle-row, #button-bottom-row{
+    display: flex;
+    justify-content: center;
+}
