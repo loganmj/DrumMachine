@@ -1,3 +1,4 @@
+import { useState, useRef } from "react";
 import "./DrumPad.css";
 
 interface Props {
@@ -6,10 +7,20 @@ interface Props {
 }
 
 const DrumPad = ({ label, audioClipURL }: Props) => {
+  const audioReference = useRef<HTMLAudioElement | null>(null);
+
+  const handleDrumPadButtonClick = () => {
+    if (audioReference.current) {
+      audioReference.current.play();
+    }
+  };
+
   return (
     <>
-      <button id="drum-pad-button">{label}</button>
-      <audio src={audioClipURL}></audio>
+      <button id="drum-pad-button" onClick={handleDrumPadButtonClick}>
+        {label}
+      </button>
+      <audio ref={audioReference} src={audioClipURL}></audio>
     </>
   );
 };
