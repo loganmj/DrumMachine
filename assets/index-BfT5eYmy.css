@@ -1,0 +1,1 @@
+body{background-color:#483d8b}#drum-pad-button{height:75px;width:75px;margin:5px}.audio-clip{display:none}#drum-machine{display:flex;justify-content:center;align-items:center}#button-top-row,#button-middle-row,#button-bottom-row{display:flex;justify-content:center}#audio-file-label{border:2px solid white;font-size:25px;padding:10px;margin:5px}
