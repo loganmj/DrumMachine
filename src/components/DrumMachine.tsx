@@ -1,7 +1,10 @@
 import DrumPad from "./DrumPad";
 import "./DrumMachine.css";
+import { useState } from "react";
 
 const DrumMachine = () => {
+  const [audioFileName, setAudioFileName] = useState("TEST");
+
   const AUDIO_CLIP_URL_HEATER_1 =
     "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3";
   const AUDIO_CLIP_URL_HEATER_2 =
@@ -50,7 +53,9 @@ const DrumMachine = () => {
             ></DrumPad>
           </div>
         </div>
-        <div id="display"></div>
+        <div id="display">
+          <label id="audio-file-label">{audioFileName}</label>
+        </div>
       </div>
     </>
   );

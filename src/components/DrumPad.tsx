@@ -20,7 +20,11 @@ const DrumPad = ({ label, audioClipURL }: Props) => {
       <button id="drum-pad-button" onClick={handleDrumPadButtonClick}>
         {label}
       </button>
-      <audio ref={audioReference} src={audioClipURL}></audio>
+      <audio
+        className="audio-clip"
+        ref={audioReference}
+        src={audioClipURL}
+      ></audio>
     </>
   );
 };
