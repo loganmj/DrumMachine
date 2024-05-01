@@ -9,7 +9,7 @@ const DrumMachine = () => {
   const AUDIO_CLIP_URL_HEATER_3 =
     "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3";
   const AUDIO_CLIP_URL_HEATER_4 =
-    "https://s3.amazonaws.com/freecodecamp/drums/Heater-4.mp3";
+    "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3";
   const AUDIO_CLIP_URL_CLAP =
     "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3";
   const AUDIO_CLIP_URL_OPEN_HIGH_HAT =
